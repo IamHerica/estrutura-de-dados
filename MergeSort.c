@@ -1,6 +1,3 @@
-#include <stdio.h>
-#define TAMANHO 10
-
 // Merge (conquista)
 void merge(int *vetor, int qtddelementos) {
   int i, j, k, meio;
@@ -71,14 +68,3 @@ void imprimeVetor(int *vetor) { // ou int vetor[TAMANHO]; int vetor[]
   printf("\n\n");
 }
 
-int main () {
-  int vetor[TAMANHO] = {75, 80, 72, 33, 45, 55, 67, 28, 23, 18};
-
-  printf("Vetor original.....:");
-  imprimeVetor(vetor); //Chamando a função, passando o vetor
-
-  mergeSort(vetor, TAMANHO); //Chamando a função, passando o vetor e seu tamanho
-
-  printf("Vetor ordenado.....:");
-  imprimeVetor(vetor); //Chamando a função, passando o vetor
-}
