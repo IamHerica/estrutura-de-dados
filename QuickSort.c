@@ -1,6 +1,3 @@
-#include <stdio.h>
-#define TAMANHO 10
-
 void quickSort(int *vetor, int esq, int dir) {
   int i, j;
   int pivo, aux;
@@ -43,16 +40,4 @@ void imprimeVetor(int *vetor) { // ou int vetor[TAMANHO]; int vetor[]
     printf(" %d", vetor[ind]);
 
   printf("\n\n");
-}
-
-int main () {
-  int vetor[TAMANHO] = {75, 80, 72, 33, 45, 55, 67, 28, 23, 18};
-
-  printf("Vetor original.....:");
-  imprimeVetor(vetor); //Chamando a função, passando o vetor
-
-  quickSort(vetor, 0, TAMANHO-1); //Chamando a função, passando o 0 do elemento da esquerda e o ultimo argumento
-
-  printf("Vetor ordenado.....:");
-  imprimeVetor(vetor); //Chamando a função, passando o vetor
 }
